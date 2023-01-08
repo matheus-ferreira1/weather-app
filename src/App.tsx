@@ -153,13 +153,13 @@ export const App: FC = () => {
               setInputValue(e.target.value);
             }}
             value={inputValue}
-            className="flex-1 bg-transparent outline-none placeholder:text-gray-300 text-white text-[16px] font-light pl-6 h-full"
+            className="w-full bg-transparent outline-none placeholder:text-gray-300 text-white text-[16px] font-light pl-6 h-full"
             type="text"
             placeholder="Search by city or country"
           />
           <button
             onClick={(e) => handleSubmit(e)}
-            className="bg-[#1ab8ed] hover:bg-[#15abdd] w-20 h-12 rounded-full flex justify-center items-center transition duration-200 "
+            className=" bg-[#1ab8ed] hover:bg-[#15abdd] min-w-2 w-20 h-12 rounded-full flex justify-center items-center transition duration-200 "
           >
             <IoMdSearch className="text-2xl text-white" />
           </button>
@@ -256,10 +256,9 @@ export const App: FC = () => {
           </div>
         )}
       </div>
-      <footer className="py-8 text-gray-400 text-lg">
-        <h3 className="text-center">
-          Developed by Matheus Ferreira - &copy; 2023
-        </h3>
+      <footer className="py-8 text-gray-200 text-lg font-semibold text-center tracking-wider">
+        <h3>Developed by Matheus Ferreira</h3>
+        <h4 className="font-normal">&copy; 2023</h4>
       </footer>
     </div>
   );
