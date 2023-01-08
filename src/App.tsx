@@ -256,8 +256,10 @@ export const App: FC = () => {
           </div>
         )}
       </div>
-      <footer className="py-8 text-gray-400 text-lg ">
-        <h3>Developed by Matheus Ferreira - &copy; 2023</h3>
+      <footer className="py-8 text-gray-400 text-lg">
+        <h3 className="text-center">
+          Developed by Matheus Ferreira - &copy; 2023
+        </h3>
       </footer>
     </div>
   );
