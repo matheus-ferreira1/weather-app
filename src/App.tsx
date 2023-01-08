@@ -153,9 +153,9 @@ export const App: FC = () => {
               setInputValue(e.target.value);
             }}
             value={inputValue}
-            className="w-full bg-transparent outline-none placeholder:text-gray-300 text-white text-[16px] font-light pl-6 h-full"
+            className="w-full bg-transparent outline-none placeholder:text-gray-300 placeholder:text-md text-white text-[16px] font-light pl-6 h-full"
             type="text"
-            placeholder="Search by city or country"
+            placeholder="Search by city"
           />
           <button
             onClick={(e) => handleSubmit(e)}
