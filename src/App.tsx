@@ -137,7 +137,7 @@ export const App: FC = () => {
   const date = new Date();
 
   return (
-    <div className="w-full h-screen bg-gradientBg bg-no-repeat bg-cover bg-center flex flex-col items-center justify-center px-4 lg:px-0">
+    <div className="w-full h-screen bg-gradient-to-tr from-[#77CCEB] via-[#4b298e] to-[#6f6fe2] flex flex-col items-center justify-center px-4 lg:px-0">
       {errorMsg && (
         <div className="w-full max-w-[90vw] lg:max-w-[450px] bg-[#ff208c] text-white absolute top-2 lg:top-10 p-4 capitalize rounded-md z-10">{`${errorMsg.response?.data.message}`}</div>
       )}
@@ -256,6 +256,9 @@ export const App: FC = () => {
           </div>
         )}
       </div>
+      <footer className="py-8 text-gray-400 text-lg ">
+        <h3>Developed by Matheus Ferreira - &copy; 2023</h3>
+      </footer>
     </div>
   );
 };
