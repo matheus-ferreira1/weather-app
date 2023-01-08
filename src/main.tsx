@@ -4,9 +4,7 @@ import { App } from "./App";
 import "./index.css";
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
-    // <React.StrictMode>
+  <React.StrictMode>
     <App />
-    // </React.StrictMode>
+  </React.StrictMode>
 );
-
-// REACT OUT OF STRICT MODE JUST FOR TESTING THE API WITHOUT CONSUMING ALL THE LIMIT
